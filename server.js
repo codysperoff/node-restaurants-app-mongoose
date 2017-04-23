@@ -1,3 +1,6 @@
+//Website Link:
+//mongodb://<dbuser>:<dbpassword>@ds161630.mlab.com:61630/restaurants-app
+
 const bodyParser = require('body-parser');
 const express = require('express');
 const mongoose = require('mongoose');
