@@ -1,4 +1,4 @@
-language: node_js
-node_js: node
+language: node_js //telling travis we are looking to test a node program
+node_js: node //you want to run against the most recent version of node
 services:
-- mongodb
+- mongodb //you want a mongoDB database to run
