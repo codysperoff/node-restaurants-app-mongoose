@@ -2,3 +2,10 @@ language: node_js //telling travis we are looking to test a node program
 node_js: node //you want to run against the most recent version of node
 services:
 - mongodb //you want a mongoDB database to run
+deploy:
+  provider: heroku
+  api_key:
+    secure: CErM4C/leEL4nOf9w5bn85eEHsk3EiJnisZcbkBd97inMlBvXiHnf59Ph7yY5KdS4UmPJCbTfzgxo/E/r+t8VIzox8TyxC2wo1ReRsmgn1avuiDxdsBkDic+N6GE0vtXsJeM/x3wC/9jo5KUVkMX3Oog16ajS/11W7PvkgQtSYe/f+1l/fbS+z/iKEX2WOr2EYpc0y/NftPZfEOGPLKbzEnQij1znP/N059f3u36AHAXoNc+p+x2iKM87upYg2rv2f8OP3USqq7Ajlkt3o+k/HmtK160TCaAknlWBgscI7slG42l0+etkM9fOzcAH49Va/X0V7zl82YPo/xWNp2DuE7WtHN3SkgGg0sKuQFX9urW6wvndEHZrq01qh8P4Eg16rjxWYtnSaQCYEV6AsDF710akESTLr/2YqF5NKR6YOjmqC8D1P3G+5UldiTZb5D/bw7+E05QtPWTAhDXIaDMMaapbj+azhfe9IWO2EX1+Ut0DdcQxsoQUgHZABvC7A/HohW4S2/fcMR0dpCAF8O/wN2gV4muMDF+NpEW6F8VclR3aSQFM0B9e7ffLi31TqcxWxyvFxp4pK95Y5LJnpQdDt0nlf5MUK4kQNOZOgQpmLUmf5CkJCYftw2opVxp8/NMLc8rchRwMSXBGhtBj1bzYQmkN3BHHSygVzFQDLl6IM0=
+    app: fast-thicket-16547
+  on:
+    repo: codysperoff/node-restaurants-app-mongoose
